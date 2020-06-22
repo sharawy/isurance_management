@@ -16,7 +16,8 @@ python manage.py migrate
 python manage.py runserver
 ```
 **Note: You can import the postman collection and test the api**
-#Test
+
+# Test
 
 ```bash
 python manage.py test
