@@ -7,7 +7,8 @@ from .models import Customer
 
 class CustomerSerializer(serializers.ModelSerializer):
     policies = PolicySerializer(many=True, read_only=True)
-    dob = serializers.DateField(format=settings.DATE_FORMAT, input_formats=[settings.DATE_FORMAT,])
+    dob = serializers.DateField(format=settings.DATE_FORMAT, input_formats=[settings.DATE_FORMAT, ])
+
     class Meta:
         model = Customer
         fields = ('id', 'first_name', 'last_name', 'dob', 'policies')
