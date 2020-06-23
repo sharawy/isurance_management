@@ -40,21 +40,21 @@ python manage.py runserver
         }
         ```
 - **Add policy to customer**
-    - Path: /api/v1/customers/{customer_id}/add_policies/
-    - method: POST
+    - Path: /api/v1/customers/{customer_id}/policies/
+    - method: PUT
     - body: 
         ```json
         {
-            "policies": [{policy_id}, {policy_id}]
+            "policies": [policy_id, policy_id]
         }
         ```
 - **Remove policy to customer**
-    - Path: /api/v1/customers/{customer_id}/remove_policies/
-    - method: POST
+    - Path: /api/v1/customers/{customer_id}/policies/
+    - method: DELETE
     - body: 
         ```json
         {
-            "policies": [{policy_id}, {policy_id}]
+            "policies": [policy_id, policy_id]
         }
         ```
 **Note: You can import the postman collection and test the api**
