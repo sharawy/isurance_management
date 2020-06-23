@@ -83,7 +83,7 @@
 				{
 					"name": "add policies to customer",
 					"request": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -95,7 +95,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/v1/customers/1/add_policies/",
+							"raw": "http://127.0.0.1:8000/api/v1/customers/1/policies/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -109,7 +109,7 @@
 								"v1",
 								"customers",
 								"1",
-								"add_policies",
+								"policies",
 								""
 							]
 						}
@@ -119,11 +119,11 @@
 				{
 					"name": "remove policies from customer",
 					"request": {
-						"method": "POST",
+						"method": "DELETE",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"policies\":[1]\n}",
+							"raw": "{\n  \"policies\":[5]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -131,7 +131,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/v1/customers/1/remove_policies/",
+							"raw": "http://127.0.0.1:8000/api/v1/customers/1/policies/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -145,7 +145,7 @@
 								"v1",
 								"customers",
 								"1",
-								"remove_policies",
+								"policies",
 								""
 							]
 						}
